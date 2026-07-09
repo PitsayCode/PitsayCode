@@ -64,6 +64,7 @@ Tenho facilidade para aprender novas tecnologias, gosto de resolver problemas e 
 
 [![CRUD_Pyton](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true)](https://github.com/PitsayCode/CRUD_Pyton)
 [![Bot_de_vendas-Produtos](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Bot_de_vendas-Produtos&theme=radical&hide_border=true)](https://github.com/PitsayCode/Bot_de_vendas-Produtos)
+[![Vida-Ativa-60-](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Vida-Ativa-60-&theme=radical&hide_border=true)](https://github.com/PitsayCode/Vida-Ativa-60-)
 
 </div>
 
@@ -71,7 +72,7 @@ Tenho facilidade para aprender novas tecnologias, gosto de resolver problemas e 
 |---|---|---|
 | 🛒 **[CRUD_Pyton](https://github.com/PitsayCode/CRUD_Pyton)** | Aplicação CRUD (Create, Read, Update, Delete) em Python com banco de dados SQL, aplicando boas práticas de organização e separação de responsabilidades. | `Python` `SQL` |
 | 🤖 **[Bot_de_vendas-Produtos](https://github.com/PitsayCode/Bot_de_vendas-Produtos)** | Robô de automação web com Playwright: faz login/cadastro, coleta preços de produtos de um e-commerce e exporta os dados para um relatório em Excel. | `Python` `Playwright` `SQLite` |
-| 🏃 **Melhor Idade Ativa** | Landing page de vendas de um e-book voltado ao público 60+, com rastreamento via Meta Pixel e checkout integrado (repositório privado). | `JavaScript` `Vite` `HTML/CSS` |
+| 🏃 **[Vida-Ativa-60-](https://github.com/PitsayCode/Vida-Ativa-60-)** | Landing page de vendas de um e-book voltado ao público 60+, com rastreamento via Meta Pixel e checkout integrado. | `JavaScript` `Vite` `HTML/CSS` |
 
 > Sinta-se livre para fixar (*pin*) outros repositórios diretamente no seu perfil do GitHub em **Customize your pins**, e eles aparecerão automaticamente em destaque.
 
