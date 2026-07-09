@@ -33,11 +33,13 @@ Tenho facilidade para aprender novas tecnologias, gosto de resolver problemas e 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 </div>
 
@@ -60,11 +62,18 @@ Tenho facilidade para aprender novas tecnologias, gosto de resolver problemas e 
 
 <div align="center">
 
-[![Crud_Pyton](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true)](https://github.com/PitsayCode/CRUD_Pyton)
+[![CRUD_Pyton](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true)](https://github.com/PitsayCode/CRUD_Pyton)
+[![Bot_de_vendas-Produtos](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Bot_de_vendas-Produtos&theme=radical&hide_border=true)](https://github.com/PitsayCode/Bot_de_vendas-Produtos)
 
 </div>
 
-> Sinta-se livre para fixar (*pin*) seus repositórios favoritos diretamente no seu perfil do GitHub em **Customize your pins**, e eles aparecerão automaticamente em destaque.
+| Projeto | Descrição | Tecnologias |
+|---|---|---|
+| 🛒 **[CRUD_Pyton](https://github.com/PitsayCode/CRUD_Pyton)** | Aplicação CRUD (Create, Read, Update, Delete) em Python com banco de dados SQL, aplicando boas práticas de organização e separação de responsabilidades. | `Python` `SQL` |
+| 🤖 **[Bot_de_vendas-Produtos](https://github.com/PitsayCode/Bot_de_vendas-Produtos)** | Robô de automação web com Playwright: faz login/cadastro, coleta preços de produtos de um e-commerce e exporta os dados para um relatório em Excel. | `Python` `Playwright` `SQLite` |
+| 🏃 **Melhor Idade Ativa** | Landing page de vendas de um e-book voltado ao público 60+, com rastreamento via Meta Pixel e checkout integrado (repositório privado). | `JavaScript` `Vite` `HTML/CSS` |
+
+> Sinta-se livre para fixar (*pin*) outros repositórios diretamente no seu perfil do GitHub em **Customize your pins**, e eles aparecerão automaticamente em destaque.
 
 ---
 
