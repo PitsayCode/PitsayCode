@@ -1,6 +1,6 @@
 <!-- ========== BANNER ========== -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,6&height=180&section=header&text=Victor%20Alexandre&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Engenharia%20de%20Software%20%E2%80%A2%20Automa%C3%A7%C3%A3o%20%E2%80%A2%20Dados&descAlignY=58&descSize=18" alt="Banner" />
+  <img src="./assets/banner.svg" width="100%" alt="" />
 </p>
 
 <p align="center">

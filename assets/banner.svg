@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#0d1117"/><stop offset="0.55" stop-color="#141026"/><stop offset="1" stop-color="#1f0f1c"/>
+</linearGradient>
+<radialGradient id="vig" cx="0.5" cy="0.5" r="0.6">
+  <stop offset="0" stop-color="#0d1117" stop-opacity="0.92"/>
+  <stop offset="0.55" stop-color="#0d1117" stop-opacity="0.55"/>
+  <stop offset="1" stop-color="#0d1117" stop-opacity="0.15"/>
+</radialGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0d1117" stop-opacity="1"/>
+  <stop offset="0.15" stop-color="#0d1117" stop-opacity="0"/>
+  <stop offset="0.85" stop-color="#0d1117" stop-opacity="0"/>
+  <stop offset="1" stop-color="#0d1117" stop-opacity="1"/>
+</linearGradient>
+<linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#ffd1dc"/>
+</linearGradient>
+<linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#F75C7E" stop-opacity="0"/><stop offset="0.5" stop-color="#F75C7E"/><stop offset="1" stop-color="#F75C7E" stop-opacity="0"/>
+</linearGradient>
+<filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+  <feGaussianBlur stdDeviation="6" result="b"/>
+  <feFlood flood-color="#F75C7E" flood-opacity="0.55"/><feComposite in2="b" operator="in" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<clipPath id="clip"><rect width="1200" height="340" rx="14"/></clipPath>
+</defs>
+<style>
+  .code { font-family: 'Fira Code','JetBrains Mono',Consolas,'Courier New',monospace; font-size: 13px; }
+  .c0 { animation: up 38s linear infinite; }
+  .c1 { animation: up 30s linear infinite; }
+  .c2 { animation: up 46s linear infinite; }
+  .t  { font-family: 'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif; }
+  .cur { animation: blink 1s step-end infinite; }
+  .in  { animation: fadein 1.2s ease-out both; }
+  @keyframes blink { 50% { opacity: 0; } }
+  @keyframes fadein { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  @keyframes up0 { from { transform: translateY(0); } to { transform: translateY(-513px); } }
+  .c0 { animation-name: up0; }
+  @keyframes up1 { from { transform: translateY(0); } to { transform: translateY(-513px); } }
+  .c1 { animation-name: up1; }
+  @keyframes up2 { from { transform: translateY(0); } to { transform: translateY(-513px); } }
+  .c2 { animation-name: up2; }
+</style>
+<g clip-path="url(#clip)">
+<rect width="1200" height="340" fill="url(#bg)"/>
+<g class="code" opacity="0.5"><g class="c0">
+<text x="24" y="20" fill="#F75C7E" xml:space="preserve">from playwright.sync_api import sync_playwright</text>
+<text x="24" y="58" fill="#F75C7E" xml:space="preserve">def coletar_precos(page, termo):</text>
+<text x="24" y="77" fill="#c9d1d9" xml:space="preserve">    page.goto(URL_LOJA)</text>
+<text x="24" y="96" fill="#a5d6ff" xml:space="preserve">    page.fill('#busca', termo)</text>
+<text x="24" y="115" fill="#a5d6ff" xml:space="preserve">    page.keyboard.press('Enter')</text>
+<text x="24" y="134" fill="#a5d6ff" xml:space="preserve">    page.wait_for_selector('.produto')</text>
+<text x="24" y="153" fill="#a5d6ff" xml:space="preserve">    itens = page.query_selector_all('.produto')</text>
+<text x="24" y="172" fill="#F75C7E" xml:space="preserve">    return [extrair(i) for i in itens]</text>
+<text x="24" y="210" fill="#F75C7E" xml:space="preserve">def classificar(preco: float) -&gt; str:</text>
+<text x="24" y="229" fill="#F75C7E" xml:space="preserve">    if preco &lt; 50:   return 'baixo'</text>
+<text x="24" y="248" fill="#F75C7E" xml:space="preserve">    if preco &lt; 200:  return 'medio'</text>
+<text x="24" y="267" fill="#F75C7E" xml:space="preserve">    return 'alto'</text>
+<text x="24" y="305" fill="#F75C7E" xml:space="preserve">with sync_playwright() as p:</text>
+<text x="24" y="324" fill="#c9d1d9" xml:space="preserve">    browser = p.chromium.launch()</text>
+<text x="24" y="343" fill="#c9d1d9" xml:space="preserve">    page = browser.new_page()</text>
+<text x="24" y="362" fill="#a5d6ff" xml:space="preserve">    dados = coletar_precos(page, 'notebook')</text>
+<text x="24" y="381" fill="#a5d6ff" xml:space="preserve">    gerar_excel(dados, 'relatorio.xlsx')</text>
+<text x="24" y="400" fill="#c9d1d9" xml:space="preserve">    browser.close()</text>
+<text x="24" y="438" fill="#6e7681" xml:space="preserve"># cofre de contas: AES-256-GCM</text>
+<text x="24" y="457" fill="#c9d1d9" xml:space="preserve">nonce = os.urandom(12)</text>
+<text x="24" y="476" fill="#c9d1d9" xml:space="preserve">cifra = AESGCM(chave).encrypt(nonce, raw, None)</text>
+<text x="24" y="514" fill="#F75C7E" xml:space="preserve">print(f'{len(dados)} produtos coletados')</text>
+<text x="24" y="533" fill="#F75C7E" xml:space="preserve">from playwright.sync_api import sync_playwright</text>
+<text x="24" y="571" fill="#F75C7E" xml:space="preserve">def coletar_precos(page, termo):</text>
+<text x="24" y="590" fill="#c9d1d9" xml:space="preserve">    page.goto(URL_LOJA)</text>
+<text x="24" y="609" fill="#a5d6ff" xml:space="preserve">    page.fill('#busca', termo)</text>
+<text x="24" y="628" fill="#a5d6ff" xml:space="preserve">    page.keyboard.press('Enter')</text>
+<text x="24" y="647" fill="#a5d6ff" xml:space="preserve">    page.wait_for_selector('.produto')</text>
+<text x="24" y="666" fill="#a5d6ff" xml:space="preserve">    itens = page.query_selector_all('.produto')</text>
+<text x="24" y="685" fill="#F75C7E" xml:space="preserve">    return [extrair(i) for i in itens]</text>
+<text x="24" y="723" fill="#F75C7E" xml:space="preserve">def classificar(preco: float) -&gt; str:</text>
+<text x="24" y="742" fill="#F75C7E" xml:space="preserve">    if preco &lt; 50:   return 'baixo'</text>
+<text x="24" y="761" fill="#F75C7E" xml:space="preserve">    if preco &lt; 200:  return 'medio'</text>
+<text x="24" y="780" fill="#F75C7E" xml:space="preserve">    return 'alto'</text>
+<text x="24" y="818" fill="#F75C7E" xml:space="preserve">with sync_playwright() as p:</text>
+<text x="24" y="837" fill="#c9d1d9" xml:space="preserve">    browser = p.chromium.launch()</text>
+<text x="24" y="856" fill="#c9d1d9" xml:space="preserve">    page = browser.new_page()</text>
+<text x="24" y="875" fill="#a5d6ff" xml:space="preserve">    dados = coletar_precos(page, 'notebook')</text>
+<text x="24" y="894" fill="#a5d6ff" xml:space="preserve">    gerar_excel(dados, 'relatorio.xlsx')</text>
+<text x="24" y="913" fill="#c9d1d9" xml:space="preserve">    browser.close()</text>
+<text x="24" y="951" fill="#6e7681" xml:space="preserve"># cofre de contas: AES-256-GCM</text>
+<text x="24" y="970" fill="#c9d1d9" xml:space="preserve">nonce = os.urandom(12)</text>
+<text x="24" y="989" fill="#c9d1d9" xml:space="preserve">cifra = AESGCM(chave).encrypt(nonce, raw, None)</text>
+<text x="24" y="1027" fill="#F75C7E" xml:space="preserve">print(f'{len(dados)} produtos coletados')</text>
+<text x="24" y="1046" fill="#F75C7E" xml:space="preserve">from playwright.sync_api import sync_playwright</text>
+<text x="24" y="1084" fill="#F75C7E" xml:space="preserve">def coletar_precos(page, termo):</text>
+<text x="24" y="1103" fill="#c9d1d9" xml:space="preserve">    page.goto(URL_LOJA)</text>
+<text x="24" y="1122" fill="#a5d6ff" xml:space="preserve">    page.fill('#busca', termo)</text>
+<text x="24" y="1141" fill="#a5d6ff" xml:space="preserve">    page.keyboard.press('Enter')</text>
+<text x="24" y="1160" fill="#a5d6ff" xml:space="preserve">    page.wait_for_selector('.produto')</text>
+<text x="24" y="1179" fill="#a5d6ff" xml:space="preserve">    itens = page.query_selector_all('.produto')</text>
+<text x="24" y="1198" fill="#F75C7E" xml:space="preserve">    return [extrair(i) for i in itens]</text>
+<text x="24" y="1236" fill="#F75C7E" xml:space="preserve">def classificar(preco: float) -&gt; str:</text>
+<text x="24" y="1255" fill="#F75C7E" xml:space="preserve">    if preco &lt; 50:   return 'baixo'</text>
+<text x="24" y="1274" fill="#F75C7E" xml:space="preserve">    if preco &lt; 200:  return 'medio'</text>
+<text x="24" y="1293" fill="#F75C7E" xml:space="preserve">    return 'alto'</text>
+<text x="24" y="1331" fill="#F75C7E" xml:space="preserve">with sync_playwright() as p:</text>
+<text x="24" y="1350" fill="#c9d1d9" xml:space="preserve">    browser = p.chromium.launch()</text>
+<text x="24" y="1369" fill="#c9d1d9" xml:space="preserve">    page = browser.new_page()</text>
+<text x="24" y="1388" fill="#a5d6ff" xml:space="preserve">    dados = coletar_precos(page, 'notebook')</text>
+<text x="24" y="1407" fill="#a5d6ff" xml:space="preserve">    gerar_excel(dados, 'relatorio.xlsx')</text>
+<text x="24" y="1426" fill="#c9d1d9" xml:space="preserve">    browser.close()</text>
+<text x="24" y="1464" fill="#6e7681" xml:space="preserve"># cofre de contas: AES-256-GCM</text>
+<text x="24" y="1483" fill="#c9d1d9" xml:space="preserve">nonce = os.urandom(12)</text>
+<text x="24" y="1502" fill="#c9d1d9" xml:space="preserve">cifra = AESGCM(chave).encrypt(nonce, raw, None)</text>
+<text x="24" y="1540" fill="#F75C7E" xml:space="preserve">print(f'{len(dados)} produtos coletados')</text>
+</g></g>
+<g class="code" opacity="0.5"><g class="c1">
+<text x="430" y="20" fill="#F75C7E" xml:space="preserve">SELECT p.categoria,</text>
+<text x="430" y="39" fill="#c9d1d9" xml:space="preserve">       COUNT(*)          AS qtd,</text>
+<text x="430" y="58" fill="#c9d1d9" xml:space="preserve">       ROUND(AVG(preco), 2) AS media</text>
+<text x="430" y="77" fill="#F75C7E" xml:space="preserve">FROM   produtos p</text>
+<text x="430" y="96" fill="#F75C7E" xml:space="preserve">JOIN   coletas c ON c.produto_id = p.id</text>
+<text x="430" y="115" fill="#F75C7E" xml:space="preserve">WHERE  c.data &gt;= CURRENT_DATE - 30</text>
+<text x="430" y="134" fill="#F75C7E" xml:space="preserve">GROUP  BY p.categoria</text>
+<text x="430" y="153" fill="#F75C7E" xml:space="preserve">ORDER  BY media DESC;</text>
+<text x="430" y="191" fill="#F75C7E" xml:space="preserve">CREATE TABLE clientes (</text>
+<text x="430" y="210" fill="#c9d1d9" xml:space="preserve">  id     INTEGER PRIMARY KEY,</text>
+<text x="430" y="229" fill="#c9d1d9" xml:space="preserve">  nome   TEXT NOT NULL,</text>
+<text x="430" y="248" fill="#c9d1d9" xml:space="preserve">  email  TEXT UNIQUE</text>
+<text x="430" y="267" fill="#c9d1d9" xml:space="preserve">);</text>
+<text x="430" y="305" fill="#F75C7E" xml:space="preserve">INSERT INTO clientes (nome, email)</text>
+<text x="430" y="324" fill="#F75C7E" xml:space="preserve">VALUES (?, ?);</text>
+<text x="430" y="362" fill="#F75C7E" xml:space="preserve">UPDATE estoque SET qtd = qtd - 1</text>
+<text x="430" y="381" fill="#F75C7E" xml:space="preserve">WHERE  sku = :sku AND qtd &gt; 0;</text>
+<text x="430" y="419" fill="#F75C7E" xml:space="preserve">def listar(conn):</text>
+<text x="430" y="438" fill="#a5d6ff" xml:space="preserve">    cur = conn.execute('SELECT * FROM clientes')</text>
+<text x="430" y="457" fill="#F75C7E" xml:space="preserve">    return cur.fetchall()</text>
+<text x="430" y="495" fill="#F75C7E" xml:space="preserve">git commit -m "feat: novo relatorio"</text>
+<text x="430" y="514" fill="#F75C7E" xml:space="preserve">git push origin main</text>
+<text x="430" y="533" fill="#F75C7E" xml:space="preserve">SELECT p.categoria,</text>
+<text x="430" y="552" fill="#c9d1d9" xml:space="preserve">       COUNT(*)          AS qtd,</text>
+<text x="430" y="571" fill="#c9d1d9" xml:space="preserve">       ROUND(AVG(preco), 2) AS media</text>
+<text x="430" y="590" fill="#F75C7E" xml:space="preserve">FROM   produtos p</text>
+<text x="430" y="609" fill="#F75C7E" xml:space="preserve">JOIN   coletas c ON c.produto_id = p.id</text>
+<text x="430" y="628" fill="#F75C7E" xml:space="preserve">WHERE  c.data &gt;= CURRENT_DATE - 30</text>
+<text x="430" y="647" fill="#F75C7E" xml:space="preserve">GROUP  BY p.categoria</text>
+<text x="430" y="666" fill="#F75C7E" xml:space="preserve">ORDER  BY media DESC;</text>
+<text x="430" y="704" fill="#F75C7E" xml:space="preserve">CREATE TABLE clientes (</text>
+<text x="430" y="723" fill="#c9d1d9" xml:space="preserve">  id     INTEGER PRIMARY KEY,</text>
+<text x="430" y="742" fill="#c9d1d9" xml:space="preserve">  nome   TEXT NOT NULL,</text>
+<text x="430" y="761" fill="#c9d1d9" xml:space="preserve">  email  TEXT UNIQUE</text>
+<text x="430" y="780" fill="#c9d1d9" xml:space="preserve">);</text>
+<text x="430" y="818" fill="#F75C7E" xml:space="preserve">INSERT INTO clientes (nome, email)</text>
+<text x="430" y="837" fill="#F75C7E" xml:space="preserve">VALUES (?, ?);</text>
+<text x="430" y="875" fill="#F75C7E" xml:space="preserve">UPDATE estoque SET qtd = qtd - 1</text>
+<text x="430" y="894" fill="#F75C7E" xml:space="preserve">WHERE  sku = :sku AND qtd &gt; 0;</text>
+<text x="430" y="932" fill="#F75C7E" xml:space="preserve">def listar(conn):</text>
+<text x="430" y="951" fill="#a5d6ff" xml:space="preserve">    cur = conn.execute('SELECT * FROM clientes')</text>
+<text x="430" y="970" fill="#F75C7E" xml:space="preserve">    return cur.fetchall()</text>
+<text x="430" y="1008" fill="#F75C7E" xml:space="preserve">git commit -m "feat: novo relatorio"</text>
+<text x="430" y="1027" fill="#F75C7E" xml:space="preserve">git push origin main</text>
+<text x="430" y="1046" fill="#F75C7E" xml:space="preserve">SELECT p.categoria,</text>
+<text x="430" y="1065" fill="#c9d1d9" xml:space="preserve">       COUNT(*)          AS qtd,</text>
+<text x="430" y="1084" fill="#c9d1d9" xml:space="preserve">       ROUND(AVG(preco), 2) AS media</text>
+<text x="430" y="1103" fill="#F75C7E" xml:space="preserve">FROM   produtos p</text>
+<text x="430" y="1122" fill="#F75C7E" xml:space="preserve">JOIN   coletas c ON c.produto_id = p.id</text>
+<text x="430" y="1141" fill="#F75C7E" xml:space="preserve">WHERE  c.data &gt;= CURRENT_DATE - 30</text>
+<text x="430" y="1160" fill="#F75C7E" xml:space="preserve">GROUP  BY p.categoria</text>
+<text x="430" y="1179" fill="#F75C7E" xml:space="preserve">ORDER  BY media DESC;</text>
+<text x="430" y="1217" fill="#F75C7E" xml:space="preserve">CREATE TABLE clientes (</text>
+<text x="430" y="1236" fill="#c9d1d9" xml:space="preserve">  id     INTEGER PRIMARY KEY,</text>
+<text x="430" y="1255" fill="#c9d1d9" xml:space="preserve">  nome   TEXT NOT NULL,</text>
+<text x="430" y="1274" fill="#c9d1d9" xml:space="preserve">  email  TEXT UNIQUE</text>
+<text x="430" y="1293" fill="#c9d1d9" xml:space="preserve">);</text>
+<text x="430" y="1331" fill="#F75C7E" xml:space="preserve">INSERT INTO clientes (nome, email)</text>
+<text x="430" y="1350" fill="#F75C7E" xml:space="preserve">VALUES (?, ?);</text>
+<text x="430" y="1388" fill="#F75C7E" xml:space="preserve">UPDATE estoque SET qtd = qtd - 1</text>
+<text x="430" y="1407" fill="#F75C7E" xml:space="preserve">WHERE  sku = :sku AND qtd &gt; 0;</text>
+<text x="430" y="1445" fill="#F75C7E" xml:space="preserve">def listar(conn):</text>
+<text x="430" y="1464" fill="#a5d6ff" xml:space="preserve">    cur = conn.execute('SELECT * FROM clientes')</text>
+<text x="430" y="1483" fill="#F75C7E" xml:space="preserve">    return cur.fetchall()</text>
+<text x="430" y="1521" fill="#F75C7E" xml:space="preserve">git commit -m "feat: novo relatorio"</text>
+<text x="430" y="1540" fill="#F75C7E" xml:space="preserve">git push origin main</text>
+</g></g>
+<g class="code" opacity="0.5"><g class="c2">
+<text x="820" y="20" fill="#F75C7E" xml:space="preserve">function doGet() {</text>
+<text x="820" y="39" fill="#F75C7E" xml:space="preserve">  return HtmlService</text>
+<text x="820" y="58" fill="#a5d6ff" xml:space="preserve">    .createTemplateFromFile('index')</text>
+<text x="820" y="77" fill="#c9d1d9" xml:space="preserve">    .evaluate()</text>
+<text x="820" y="96" fill="#a5d6ff" xml:space="preserve">    .setTitle('Painel');</text>
+<text x="820" y="115" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="153" fill="#F75C7E" xml:space="preserve">function getTotais() {</text>
+<text x="820" y="172" fill="#F75C7E" xml:space="preserve">  const sh = SpreadsheetApp.getActive()</text>
+<text x="820" y="191" fill="#a5d6ff" xml:space="preserve">    .getSheetByName('Base');</text>
+<text x="820" y="210" fill="#F75C7E" xml:space="preserve">  const rows = sh.getDataRange().getValues();</text>
+<text x="820" y="229" fill="#F75C7E" xml:space="preserve">  return rows.reduce((acc, r) =&gt; {</text>
+<text x="820" y="248" fill="#c9d1d9" xml:space="preserve">    acc[r[2]] = (acc[r[2]] || 0) + 1;</text>
+<text x="820" y="267" fill="#F75C7E" xml:space="preserve">    return acc;</text>
+<text x="820" y="286" fill="#c9d1d9" xml:space="preserve">  }, {});</text>
+<text x="820" y="305" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="343" fill="#a5d6ff" xml:space="preserve">fbq('track', 'InitiateCheckout');</text>
+<text x="820" y="381" fill="#F75C7E" xml:space="preserve">export default defineConfig({</text>
+<text x="820" y="400" fill="#c9d1d9" xml:space="preserve">  plugins: [],</text>
+<text x="820" y="419" fill="#a5d6ff" xml:space="preserve">  build: { outDir: 'dist' },</text>
+<text x="820" y="438" fill="#c9d1d9" xml:space="preserve">});</text>
+<text x="820" y="476" fill="#F75C7E" xml:space="preserve">const card = document.querySelector('.card');</text>
+<text x="820" y="495" fill="#a5d6ff" xml:space="preserve">card.classList.add('ativo');</text>
+<text x="820" y="514" fill="#a5d6ff" xml:space="preserve">console.log('deploy ok ✔');</text>
+<text x="820" y="533" fill="#F75C7E" xml:space="preserve">function doGet() {</text>
+<text x="820" y="552" fill="#F75C7E" xml:space="preserve">  return HtmlService</text>
+<text x="820" y="571" fill="#a5d6ff" xml:space="preserve">    .createTemplateFromFile('index')</text>
+<text x="820" y="590" fill="#c9d1d9" xml:space="preserve">    .evaluate()</text>
+<text x="820" y="609" fill="#a5d6ff" xml:space="preserve">    .setTitle('Painel');</text>
+<text x="820" y="628" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="666" fill="#F75C7E" xml:space="preserve">function getTotais() {</text>
+<text x="820" y="685" fill="#F75C7E" xml:space="preserve">  const sh = SpreadsheetApp.getActive()</text>
+<text x="820" y="704" fill="#a5d6ff" xml:space="preserve">    .getSheetByName('Base');</text>
+<text x="820" y="723" fill="#F75C7E" xml:space="preserve">  const rows = sh.getDataRange().getValues();</text>
+<text x="820" y="742" fill="#F75C7E" xml:space="preserve">  return rows.reduce((acc, r) =&gt; {</text>
+<text x="820" y="761" fill="#c9d1d9" xml:space="preserve">    acc[r[2]] = (acc[r[2]] || 0) + 1;</text>
+<text x="820" y="780" fill="#F75C7E" xml:space="preserve">    return acc;</text>
+<text x="820" y="799" fill="#c9d1d9" xml:space="preserve">  }, {});</text>
+<text x="820" y="818" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="856" fill="#a5d6ff" xml:space="preserve">fbq('track', 'InitiateCheckout');</text>
+<text x="820" y="894" fill="#F75C7E" xml:space="preserve">export default defineConfig({</text>
+<text x="820" y="913" fill="#c9d1d9" xml:space="preserve">  plugins: [],</text>
+<text x="820" y="932" fill="#a5d6ff" xml:space="preserve">  build: { outDir: 'dist' },</text>
+<text x="820" y="951" fill="#c9d1d9" xml:space="preserve">});</text>
+<text x="820" y="989" fill="#F75C7E" xml:space="preserve">const card = document.querySelector('.card');</text>
+<text x="820" y="1008" fill="#a5d6ff" xml:space="preserve">card.classList.add('ativo');</text>
+<text x="820" y="1027" fill="#a5d6ff" xml:space="preserve">console.log('deploy ok ✔');</text>
+<text x="820" y="1046" fill="#F75C7E" xml:space="preserve">function doGet() {</text>
+<text x="820" y="1065" fill="#F75C7E" xml:space="preserve">  return HtmlService</text>
+<text x="820" y="1084" fill="#a5d6ff" xml:space="preserve">    .createTemplateFromFile('index')</text>
+<text x="820" y="1103" fill="#c9d1d9" xml:space="preserve">    .evaluate()</text>
+<text x="820" y="1122" fill="#a5d6ff" xml:space="preserve">    .setTitle('Painel');</text>
+<text x="820" y="1141" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="1179" fill="#F75C7E" xml:space="preserve">function getTotais() {</text>
+<text x="820" y="1198" fill="#F75C7E" xml:space="preserve">  const sh = SpreadsheetApp.getActive()</text>
+<text x="820" y="1217" fill="#a5d6ff" xml:space="preserve">    .getSheetByName('Base');</text>
+<text x="820" y="1236" fill="#F75C7E" xml:space="preserve">  const rows = sh.getDataRange().getValues();</text>
+<text x="820" y="1255" fill="#F75C7E" xml:space="preserve">  return rows.reduce((acc, r) =&gt; {</text>
+<text x="820" y="1274" fill="#c9d1d9" xml:space="preserve">    acc[r[2]] = (acc[r[2]] || 0) + 1;</text>
+<text x="820" y="1293" fill="#F75C7E" xml:space="preserve">    return acc;</text>
+<text x="820" y="1312" fill="#c9d1d9" xml:space="preserve">  }, {});</text>
+<text x="820" y="1331" fill="#c9d1d9" xml:space="preserve">}</text>
+<text x="820" y="1369" fill="#a5d6ff" xml:space="preserve">fbq('track', 'InitiateCheckout');</text>
+<text x="820" y="1407" fill="#F75C7E" xml:space="preserve">export default defineConfig({</text>
+<text x="820" y="1426" fill="#c9d1d9" xml:space="preserve">  plugins: [],</text>
+<text x="820" y="1445" fill="#a5d6ff" xml:space="preserve">  build: { outDir: 'dist' },</text>
+<text x="820" y="1464" fill="#c9d1d9" xml:space="preserve">});</text>
+<text x="820" y="1502" fill="#F75C7E" xml:space="preserve">const card = document.querySelector('.card');</text>
+<text x="820" y="1521" fill="#a5d6ff" xml:space="preserve">card.classList.add('ativo');</text>
+<text x="820" y="1540" fill="#a5d6ff" xml:space="preserve">console.log('deploy ok ✔');</text>
+</g></g>
+<rect width="1200" height="340" fill="url(#vig)"/>
+<rect width="1200" height="340" fill="url(#fade)"/>
+<rect x="300" y="78" width="600" height="190" rx="18" fill="#0d1117" fill-opacity="0.78" stroke="#F75C7E" stroke-opacity="0.25"/>
+<g class="in">
+<text x="600" y="150" text-anchor="middle" class="t" font-size="64" font-weight="700" fill="url(#name)" filter="url(#glow)">Victor Alexandre</text>
+<rect x="420" y="172" width="360" height="2" fill="url(#line)"/>
+<text x="600" y="210" text-anchor="middle" class="code" style="font-size:20px" fill="#e6edf3">Engenharia de Software · Automação · Dados<tspan class="cur" fill="#F75C7E"> ▌</tspan></text>
+<text x="600" y="246" text-anchor="middle" class="code" style="font-size:14px" fill="#8b949e">Python · Playwright · SQL · JavaScript</text>
+</g>
+<rect x="0.5" y="0.5" width="1199" height="339" rx="14" fill="none" stroke="#F75C7E" stroke-opacity="0.35"/>
+</g></svg>
