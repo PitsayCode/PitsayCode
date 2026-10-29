@@ -61,13 +61,6 @@ Sou o **Victor**, estudante de **Engenharia de Software** em São Paulo. Gosto d
 
 ## 📌 Projetos em destaque
 
-<p align="center">
-  <a href="https://github.com/PitsayCode/PriceBot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=PriceBot&theme=radical&hide_border=true" alt="PriceBot" /></a>
-  <a href="https://github.com/PitsayCode/Bot_de_vendas-Produtos"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Bot_de_vendas-Produtos&theme=radical&hide_border=true" alt="Bot de vendas" /></a>
-  <a href="https://github.com/PitsayCode/Vida-Ativa-60-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Vida-Ativa-60-&theme=radical&hide_border=true" alt="Vida Ativa 60+" /></a>
-  <a href="https://github.com/PitsayCode/CRUD_Pyton"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true" alt="CRUD Python" /></a>
-</p>
-
 | Projeto | O que faz | Stack |
 |---|---|---|
 | 💰 [**PriceBot**](https://github.com/PitsayCode/PriceBot) | Robô que coleta preços, classifica por faixa e gera Excel com gráficos. Interface moderna e cofre de contas criptografado (AES-256-GCM). | `Python` `Playwright` `Excel` |
@@ -81,12 +74,12 @@ Sou o **Victor**, estudante de **Engenharia de Software** em São Paulo. Gosto d
 ## 📊 Estatísticas
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=PitsayCode&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
-  <img height="165" src="https://streak-stats.demolab.com/?user=PitsayCode&theme=radical&hide_border=true" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=PitsayCode&theme=radical&hide_border=true&locale=pt_BR" alt="" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PitsayCode&layout=compact&theme=radical&hide_border=true&langs_count=6" alt="Top Languages" />
+  <img src="./profile-summary-card-output/radical/3-stats.svg" width="49%" alt="" />
+  <img src="./profile-summary-card-output/radical/1-repos-per-language.svg" width="49%" alt="" />
 </p>
 
 ---
