@@ -1,107 +1,103 @@
-<div align="center">
+<!-- ========== BANNER ========== -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,6&height=180&section=header&text=Victor%20Alexandre&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Engenharia%20de%20Software%20%E2%80%A2%20Automa%C3%A7%C3%A3o%20%E2%80%A2%20Dados&descAlignY=58&descSize=18" alt="Banner" />
+</p>
 
-# Olá, eu sou o Victor 👋
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&width=650&lines=Transformando+problemas+em+automa%C3%A7%C3%B5es;Python+%7C+Playwright+%7C+SQL+%7C+JavaScript;Bots%2C+dashboards+e+sites+que+resolvem+de+verdade;%22Pessoas+crescem+quando+superam+as+adversidades%22" alt="Typing SVG" />
+  </a>
+</p>
 
-### Estudante de Engenharia de Software | Apaixonado por Tecnologia e Anime 🍥
-
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&width=600&lines=Transformando+conhecimento+em+c%C3%B3digo;Aprendendo+todos+os+dias;Python+%7C+SQL+%7C+Git+%7C+GitHub;%22A+person+grows+up+when+he%27s+able+to+overcome+hardships%22+-+Naruto" alt="Typing SVG" />
-</div>
+<p align="center">
+  <a href="https://www.linkedin.com/in/victor-alexandre-31211426b/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://www.instagram.com/technology_resolution/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
+  <img src="https://komarev.com/ghpvc/?username=PitsayCode&color=F75C7E&style=for-the-badge&label=VISITAS" alt="Visitas" />
+</p>
 
 ---
 
 ## 🧑‍💻 Sobre mim
 
-Meu nome é **Victor Alexandre da Silva**, sou estudante de Engenharia de Software, apaixonado por tecnologia, programação e inovação. Atualmente estou focado em aprimorar minhas habilidades em **Python, Banco de Dados SQL, Git e GitHub**, sempre buscando transformar conhecimento em projetos práticos.
+Sou o **Victor**, estudante de **Engenharia de Software** em São Paulo. Gosto de pegar uma tarefa repetitiva ou um processo confuso e transformar em algo que roda sozinho: um robô, um painel ou um sistema simples que alguém usa no dia a dia.
 
-Acredito que a tecnologia é uma ferramenta capaz de gerar impacto real na vida das pessoas e das empresas. Por isso, busco constantemente aprimorar minhas competências técnicas e profissionais, mantendo uma mentalidade de aprendizado contínuo e evolução constante.
+- 🤖 Construo **robôs de automação web** com Python + Playwright (coleta de dados, relatórios em Excel)
+- 📊 Monto **dashboards e integrações** com Google Apps Script e bancos SQL
+- 🌐 Desenvolvo **sites e landing pages** para pequenos negócios
+- 📚 Estudando agora: arquitetura de software, banco de dados e mercado financeiro
+- 🌍 Praticando inglês para trabalhar em projetos internacionais
 
-Tenho facilidade para aprender novas tecnologias, gosto de resolver problemas e encaro desafios como oportunidades de crescimento. Meu objetivo é construir uma carreira sólida na área de desenvolvimento de software, contribuindo com soluções eficientes, bem estruturadas e que gerem valor real.
-
-> *"Não importa o quão talentoso você seja, ou o quão duro você se esforce, algumas coisas em vez disso são impossíveis de mudar."* — **Levi Ackerman, Attack on Titan**
+> *"Escolha aquilo de que você vai se arrepender menos."* — **Levi Ackerman**, Attack on Titan
 >
-> Por isso eu foco no que **posso** controlar: aprender mais, codar melhor e evoluir um pouco todos os dias.
+> Ninguém sabe como as coisas vão terminar. Então eu escolho aprender mais, codar melhor e evoluir um pouco todos os dias.
 
 ---
 
-## 🛠️ Tecnologias e Ferramentas
+## 🛠️ Tecnologias
 
-<div align="center">
+**Linguagens**
+<br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VSCode](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+**Automação & Dados**
+<br/>
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white" alt="Playwright" />
+<img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+<img src="https://img.shields.io/badge/Apps%20Script-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google Apps Script" />
+<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel" />
 
-</div>
-
----
-
-## 📊 Estatísticas
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PitsayCode&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" height="170"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PitsayCode&theme=radical&hide_border=true" alt="GitHub Streak" height="170"/>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PitsayCode&layout=compact&theme=radical&hide_border=true" alt="Top Languages" height="170"/>
-</div>
+**Ferramentas**
+<br/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
 
 ---
 
 ## 📌 Projetos em destaque
 
-<div align="center">
+<p align="center">
+  <a href="https://github.com/PitsayCode/PriceBot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=PriceBot&theme=radical&hide_border=true" alt="PriceBot" /></a>
+  <a href="https://github.com/PitsayCode/Bot_de_vendas-Produtos"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Bot_de_vendas-Produtos&theme=radical&hide_border=true" alt="Bot de vendas" /></a>
+  <a href="https://github.com/PitsayCode/Vida-Ativa-60-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Vida-Ativa-60-&theme=radical&hide_border=true" alt="Vida Ativa 60+" /></a>
+  <a href="https://github.com/PitsayCode/CRUD_Pyton"><img src="https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true" alt="CRUD Python" /></a>
+</p>
 
-[![CRUD_Pyton](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=CRUD_Pyton&theme=radical&hide_border=true)](https://github.com/PitsayCode/CRUD_Pyton)
-[![Bot_de_vendas-Produtos](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Bot_de_vendas-Produtos&theme=radical&hide_border=true)](https://github.com/PitsayCode/Bot_de_vendas-Produtos)
-[![Vida-Ativa-60-](https://github-readme-stats.vercel.app/api/pin/?username=PitsayCode&repo=Vida-Ativa-60-&theme=radical&hide_border=true)](https://github.com/PitsayCode/Vida-Ativa-60-)
-
-</div>
-
-| Projeto | Descrição | Tecnologias |
+| Projeto | O que faz | Stack |
 |---|---|---|
-| 🛒 **[CRUD_Pyton](https://github.com/PitsayCode/CRUD_Pyton)** | Aplicação CRUD (Create, Read, Update, Delete) em Python com banco de dados SQL, aplicando boas práticas de organização e separação de responsabilidades. | `Python` `SQL` |
-| 🤖 **[Bot_de_vendas-Produtos](https://github.com/PitsayCode/Bot_de_vendas-Produtos)** | Robô de automação web com Playwright: faz login/cadastro, coleta preços de produtos de um e-commerce e exporta os dados para um relatório em Excel. | `Python` `Playwright` `SQLite` |
-| 🏃 **[Vida-Ativa-60-](https://github.com/PitsayCode/Vida-Ativa-60-)** | Landing page de vendas de um e-book voltado ao público 60+, com rastreamento via Meta Pixel e checkout integrado. | `JavaScript` `Vite` `HTML/CSS` |
+| 💰 [**PriceBot**](https://github.com/PitsayCode/PriceBot) | Robô que coleta preços, classifica por faixa e gera Excel com gráficos. Interface moderna e cofre de contas criptografado (AES-256-GCM). | `Python` `Playwright` `Excel` |
+| 🤖 [**Bot de Vendas**](https://github.com/PitsayCode/Bot_de_vendas-Produtos) | Faz login/cadastro num e-commerce, coleta preços de produtos e exporta um relatório em Excel. | `Python` `Playwright` `SQLite` |
+| 🏃 [**Vida Ativa 60+**](https://github.com/PitsayCode/Vida-Ativa-60-) | Landing page de vendas de um e-book para o público 60+, com Meta Pixel e checkout integrado. | `JavaScript` `Vite` `HTML/CSS` |
+| 🗃️ [**CRUD Python**](https://github.com/PitsayCode/CRUD_Pyton) | CRUD completo com banco SQL e separação de responsabilidades entre camadas. | `Python` `SQL` |
+| 🐾 [**Site Petshop**](https://github.com/PitsayCode/Site_Petshop) | Site institucional para petshop. | `JavaScript` `HTML/CSS` |
 
-> Sinta-se livre para fixar (*pin*) outros repositórios diretamente no seu perfil do GitHub em **Customize your pins**, e eles aparecerão automaticamente em destaque.
+---
+
+## 📊 Estatísticas
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=PitsayCode&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img height="165" src="https://streak-stats.demolab.com/?user=PitsayCode&theme=radical&hide_border=true" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PitsayCode&layout=compact&theme=radical&hide_border=true&langs_count=6" alt="Top Languages" />
+</p>
 
 ---
 
 ## 🍥 Modo Anime ON
 
-<div align="center">
-
 | Anime | Citação |
 |---|---|
-| **Naruto** | *"Pessoas crescem quando são capazes de superar as adversidades."* |
+| **Naruto** | *"Pessoas crescem quando são capazes de superar as adversidades."* — Jiraiya |
 | **One Piece** | *"Se você não arrisca, não pode criar um futuro."* — Monkey D. Luffy |
-| **Attack on Titan** | *"Dedique seu coração."* — Levi Ackerman |
-| **My Hero Academia** | *"É bom ter um sonho impossível e tentar alcançá-lo, em vez de viver uma vida sem rumo."* — All Might |
+| **Attack on Titan** | *"Dediquem seus corações!"* — Erwin Smith |
+| **My Hero Academia** | *"É bom ter um sonho impossível e tentar alcançá-lo."* — All Might |
 
-</div>
-
----
-
-<div align="center">
-
-### 📫 Vamos nos conectar!
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/victor-alexandre-31211426b/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:victoralexandre608@gmail.com)
-
-</div>
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,6&height=120&section=footer" />
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,6&height=120&section=footer" width="100%" alt="Footer" />
